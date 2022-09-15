@@ -1,0 +1,126 @@
+.body{
+    background-color: white;
+    height: 100vh;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.side-image{
+    width: 30%;
+    height: 100vh;
+    margin-left: -26px;
+    margin-bottom: -5px;
+    ;position:absolute;
+    z-index: 1;
+}
+h1{
+    text-align: center;
+}
+
+.Logo{
+    display: flex;
+    width: 20%;
+    margin: auto;
+    /* margin-top: 10%; */
+    margin-bottom: 0px;
+}
+.gmail-button{
+    
+    color: #233d4d;
+    display: flex;
+    margin: auto;
+    width: 50%;
+    height: 6%;
+    border: 3px solid #f1f1f1;
+    border-radius: 20px;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+}
+
+.Email-password{
+    color: #233d4d;
+    justify-content: center;
+    display: flex;
+    margin-right: 45%;
+    margin-bottom: 4px;
+    
+}
+.color{
+
+    height: 100vh;
+    background-color: black;
+    position: relative;
+    z-index: 2;
+    margin-left: -25px;
+    opacity: 0.6;
+    width: 28.6rem;
+}
+.Email-password2{
+    color: #233d4d;
+    justify-content: center;
+    display: flex;
+    margin-right: 43%;
+    margin-bottom: 4px;
+    
+    
+}
+.input{
+    
+    display: flex;
+    margin: auto;
+    width: 50%;
+    height: 5%;
+    border: 3px solid #f1f1f1;
+    border-radius: 20px;
+    background: transparent;
+    border-color: f1f1f1 ;
+}
+
+
+.forget-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.forget-button{
+    color: #d0d8dc;
+    border: 3px solid #f1f1f1;   
+    display: flex;
+    margin: auto;
+    margin-top: 40px;
+    width: 50%;
+    height: 6%;
+    border-radius: 20px;
+    background-color: #171738;
+    justify-content: center;
+    align-items: center;
+}
+.css-1hsz34s-MuiDrawer-docked .MuiDrawer-paper{
+    background-color: #171738 !important;
+    color:"white" !important
+}
+.css-10hburv-MuiTypography-root{
+color:"white" !important
+}
+path{
+    color:white !important
+}
+.css-10hburv-MuiTypography-root {
+    color:white !important;
+}
+.bottom-logo{
+margin: auto;  
+}
+@media (min-width: 600px){
+.css-2dum1v-MuiDrawer-docked .MuiDrawer-paper {
+
+        background-color: #171738 !important;
+    
+}
+}
+
+@media (min-width: 1200px){
+.css-1oqqzyl-MuiContainer-root {
+    max-width: 10px !important;
+}
+}
