@@ -19,18 +19,59 @@ function App() {
           <Route
             path="/users"
             element={
-              
-                <SideBar>
-                  <Users/>
+              <SideBar>
+                <Users />
               </SideBar>
             }
           />
-          <Route path="/messages" element={<Messages />} />
-          <Route path="/analytics" element={<Analytics />} />
-          <Route path="/file-manager" element={<FileManager />} />
-          <Route path="/orders" element={<Orders />} />
-          <Route path="/saved" element={<Saved />} />
-          <Route path="/settings" element={<Settings />} />
+          <Route
+            path="/messages"
+            element={
+              <SideBar>
+                <Messages />
+              </SideBar>
+            }
+          />
+          <Route
+            path="/analytics"
+            element={
+              <SideBar>
+                <Analytics />
+              </SideBar>
+            }
+          />
+          <Route
+            path="/file-manager"
+            element={
+              <SideBar>
+                <FileManager />
+              </SideBar>
+            }
+          />
+          <Route
+            path="/orders"
+            element={
+              <SideBar>
+                <Orders />
+              </SideBar>
+            }
+          />
+          <Route
+            path="/saved"
+            element={
+              <SideBar>
+                <Saved />
+              </SideBar>
+            }
+          />
+          <Route
+            path="/settings"
+            element={
+              <SideBar>
+                <Settings />
+              </SideBar>
+            }
+          />
           <Route path="*" element={<>not found</>} />
         </Routes>
       </Router>
