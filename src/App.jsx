@@ -9,13 +9,19 @@ import Orders from "./pages/Orders";
 import Saved from "./pages/Saved";
 import SideBar from "./components/SideBar";
 import Settings from "./pages/Settings";
-import Login from "./components/login/index"
 function App() {
   return (
     <>
       <Router>
         <Routes>
-          <Route path="/" element={<Login />} />
+          <Route
+            path="/"
+            element={
+              <SideBar>
+                <Users />
+              </SideBar>
+            }
+          />
           <Route
             path="/users"
             element={
