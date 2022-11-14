@@ -97,8 +97,8 @@ const SideBar = ({ children }) => {
           width: isOpen ? "250px" : "45px",
           transition: {
             duration: 0.5,
-            type: "spring",
-            damping: 11,
+            // type: "spring",
+            // damping: 11,
           },
         }}
         className='sidebar'
