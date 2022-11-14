@@ -21,37 +21,37 @@ const routes = [
     name: <DropDown />,
     icon: <FaUser />,
   },
-  {
-    path: "/messages",
-    name: "Messages",
-    icon: <MdMessage />,
-  },
-  {
-    path: "/analytics",
-    name: "Analytics",
-    icon: <BiAnalyse />,
-  },
-  {
-    path: "/file-manager",
-    name: "File Manager",
-    icon: <AiTwotoneFileExclamation />,
-  },
-  {
-    path: "/orders",
-    name: "Order",
-    icon: <BsCartCheck />,
-  },
+  // {
+  //   path: "/messages",
+  //   name: "Messages",
+  //   icon: <MdMessage />,
+  // },
+  // {
+  //   path: "/analytics",
+  //   name: "Analytics",
+  //   icon: <BiAnalyse />,
+  // },
+  // {
+  //   path: "/file-manager",
+  //   name: "File Manager",
+  //   icon: <AiTwotoneFileExclamation />,
+  // },
+  // {
+  //   path: "/orders",
+  //   name: "Order",
+  //   icon: <BsCartCheck />,
+  // },
 
-  {
-    path: "/saved",
-    name: "Saved",
-    icon: <AiFillHeart />,
-  },
-  {
-    path: "/settings",
-    name: "Settings",
-    icon: <BiCog />,
-  },
+  // {
+  //   path: "/saved",
+  //   name: "Saved",
+  //   icon: <AiFillHeart />,
+  // },
+  // {
+  //   path: "/settings",
+  //   name: "Settings",
+  //   icon: <BiCog />,
+  // },
 ];
 const SideBar = ({ children }) => {
   const [isOpen, setIsOpen] = useState(false);
