@@ -70,6 +70,7 @@ a {
 
 .link {
     display: flex;
+    align-items: center;
     color: white;
     gap: 20px;
     padding: 5px 10px;
@@ -81,6 +82,7 @@ a {
     border-right: 4px solid white !important;
     transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045) !important;
     background: rgb(45, 51, 89) !important;
+    color: white;
 }
 
 .active {

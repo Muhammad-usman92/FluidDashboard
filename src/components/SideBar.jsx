@@ -153,8 +153,7 @@ const SideBar = ({ children }) => {
                     variants={showAnimation}
                     className='link_text'
                   >
-                    {" "}
-                    {item.name}{" "}
+                    {item.name}
                   </motion.div>
                 )}
               </AnimatePresence>
