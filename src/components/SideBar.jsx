@@ -121,7 +121,7 @@ const SideBar = ({ children }) => {
           </div>
         </div>
         <div className='search'>
-          <div className='search_icon'>
+          {/* <div className='search_icon'>
             <BiSearch />
           </div>
           <AnimatePresence>
@@ -134,7 +134,7 @@ const SideBar = ({ children }) => {
                 placeholder='Search ...'
               />
             )}
-          </AnimatePresence>
+          </AnimatePresence> */}
         </div>
         <section className='routes'>
           {routes.map((item) => (
