@@ -18,7 +18,7 @@ function App() {
             path="/"
             element={
               <SideBar>
-                <Users />
+                <DashBoard />
               </SideBar>
             }
           />
