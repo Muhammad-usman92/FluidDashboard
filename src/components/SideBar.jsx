@@ -8,11 +8,12 @@ import { BiCog } from "react-icons/bi";
 import { AiFillHeart, AiTwotoneFileExclamation } from "react-icons/ai";
 import { BsCartCheck } from "react-icons/bs";
 import { ImCross } from "react-icons/im";
+import DropDown from "./DropDown";
 //routes
 const routes = [
   {
     path: "/",
-    name: "Home",
+    name: <DropDown />,
     icon: <FaHome />,
   },
   {
