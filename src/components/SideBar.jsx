@@ -13,12 +13,12 @@ import DropDown from "./DropDown";
 const routes = [
   {
     path: "/",
-    name: <DropDown />,
+    name: "Home",
     icon: <FaHome />,
   },
   {
-    path: "/users",
-    name: "Users",
+    path: "",
+    name: <DropDown />,
     icon: <FaUser />,
   },
   {
