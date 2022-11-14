@@ -78,9 +78,9 @@ a {
 }
 
 .link:hover {
-    border-right: 4px solid white;
-    transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
-    background: rgb(45, 51, 89);
+    border-right: 4px solid white !important;
+    transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045) !important;
+    background: rgb(45, 51, 89) !important;
 }
 
 .active {
