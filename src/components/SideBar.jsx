@@ -56,24 +56,24 @@ const routes = [
 const SideBar = ({ children }) => {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
-  const inputAnimation = {
-    hidden: {
-      width: 0,
-      padding: 0,
-      opacity: 0,
-      transition: {
-        duration: 0.2,
-      },
-    },
-    show: {
-      width: "160px",
-      padding: "5px 10px",
-      opacity: 1,
-      transition: {
-        duration: 0.2,
-      },
-    },
-  };
+  // const inputAnimation = {
+  //   hidden: {
+  //     width: 0,
+  //     padding: 0,
+  //     opacity: 0,
+  //     transition: {
+  //       duration: 0.2,
+  //     },
+  //   },
+  //   show: {
+  //     width: "160px",
+  //     padding: "5px 10px",
+  //     opacity: 1,
+  //     transition: {
+  //       duration: 0.2,
+  //     },
+  //   },
+  // };
   const showAnimation = {
     hidden: {
       width: 0,
@@ -96,7 +96,7 @@ const SideBar = ({ children }) => {
         animate={{
           width: isOpen ? "250px" : "45px",
           transition: {
-            duration: 0.5,
+            duration: 0.2,
             // type: "spring",
             // damping: 11,
           },
