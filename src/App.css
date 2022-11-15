@@ -23,7 +23,7 @@ main {
 .sidebar {
     background-color: #033323;
     color: white;
-    height: 100vh;
+    height: auto;
 }
 
 .routes {
