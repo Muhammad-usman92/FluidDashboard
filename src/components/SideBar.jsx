@@ -96,6 +96,7 @@ const SideBar = ({ children }) => {
         animate={{
           width: isOpen ? "250px" : "45px",
           transition: {
+
             duration: 0.2,
             // type: "spring",
             // damping: 11,
