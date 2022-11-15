@@ -6,7 +6,7 @@ import BarChart from "./BarChart";
 import { UserData } from "../../utils/Data";
 import Box from "./Box";
 const DashBoard = () => {
-  const [userData, setUserData] = useState({
+  const [userData] = useState({
     labels: UserData.map((data) => data.year),
     datasets: [
       {

@@ -1,7 +1,27 @@
 import React from "react";
+import { MdOutlinePersonOutline } from "react-icons/md";
+import { BsCaretDownFill } from "react-icons/bs";
+import css from "./AddNew.module.css";
+import FarmerImg from "../../img/farmer-img.webp";
 const AddNew = () => {
   return (
     <div>
+      <div className={css.top}>
+        <div className='container'>
+          <div className='row'>
+            <div className='col-md-12'>
+              <div className={css.dash_top}>
+                <h4>User > Add new User</h4>
+                <div className={css.login}>
+                  <span>{<MdOutlinePersonOutline />}</span>
+                  <span>Admin</span>
+                  <span> {<BsCaretDownFill />} </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div className='container'>
         <div
           className='mt-5'
@@ -11,8 +31,12 @@ const AddNew = () => {
             <h1>Muhammad Usman Details</h1>
           </div>
           <div>
-            {/* <img src={Img} style={{ width: "200px" }} alt="" /> */}
-            <h4>Farmer image</h4>
+            <img
+              src={FarmerImg}
+              style={{ width: "150px", borderRadius: "10px" }}
+              alt='FarmerImg'
+            />
+            <h5 className='text-center'>Farmer image</h5>
           </div>
         </div>
         <h4>Personal Details</h4>
