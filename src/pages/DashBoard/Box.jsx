@@ -2,9 +2,9 @@ import React from "react";
 import css from "./DashBoard.module.css";
 import Farmer from "../../img/farmer.png";
 
-const Box = ({ heading, num, icon }) => {
+const Box = ({ heading, num, icon, box }) => {
   return (
-    <div className={css.box}>
+    <div className={box}>
       <div className={`${icon} ${css.icon}`}>
         <img src={Farmer} alt='Farmer' />
       </div>
