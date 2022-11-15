@@ -15,17 +15,12 @@ const DropDown = () => {
       <ul class='dropdown-menu' aria-labelledby='dropdownMenuButton1'>
         <li>
           <Link class='dropdown-item' to='#'>
-            Home 1
+            All USers
           </Link>
         </li>
         <li>
           <Link class='dropdown-item' to='#'>
-            Home 2
-          </Link>
-        </li>
-        <li>
-          <Link class='dropdown-item' to='#'>
-            Something else here
+            Add New User
           </Link>
         </li>
       </ul>
