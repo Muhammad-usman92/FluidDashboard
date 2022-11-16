@@ -21,10 +21,10 @@ const routes = [
     name: (
       <DropDown
         Name='Users'
-        drop1='Add New User'
-        drop2='All Users'
-        link2='/addnew'
+        drop1='All Users'
+        drop2='Add New User'
         link1='/allusers'
+        link2='/addnew'
       />
     ),
     icon: <FaUser />,
