@@ -5,6 +5,7 @@ import { BsCaretDownFill } from "react-icons/bs";
 import BarChart from "./BarChart";
 import { UserData } from "../../utils/Data";
 import Box from "./Box";
+import TopBar from "../../components/TopBar/TopBar";
 const DashBoard = () => {
   const [userData] = useState({
     labels: UserData.map((data) => data.year),
@@ -19,22 +20,7 @@ const DashBoard = () => {
   return (
     <div className='fluid'>
       {/* Top Section */}
-      <div className={css.top}>
-        <div className='container'>
-          <div className='row'>
-            <div className='col-md-12'>
-              <div className={css.dash_top}>
-                <h2>Dashboard</h2>
-                <div className={css.login}>
-                  <span>{<MdOutlinePersonOutline />}</span>
-                  <span>Admin</span>
-                  <span> {<BsCaretDownFill />} </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <TopBar heading='Dashboard' />
       {/* top 1 */}
       <div className='container mt-4'>
         <div className={css.boxes}>
