@@ -16,11 +16,11 @@ const routes = [
     path: "",
     name: (
       <DropDown
-        Name='Users'
-        drop1='All Users'
-        drop2='Add New User'
-        link1='/allusers'
-        link2='/addnew'
+        Name="Users"
+        drop1="All Users"
+        drop2="Add New User"
+        link1="/allusers"
+        link2="/addnew"
       />
     ),
     icon: <FaUser />,
@@ -29,11 +29,11 @@ const routes = [
     path: "",
     name: (
       <DropDown
-        Name='Farmers'
-        drop1='Add New Farmer'
-        drop2='All Farmers'
-        link2='/addnew'
-        link1='/allusers'
+        Name="Farmers"
+        drop1="Add New Farmer"
+        drop2="All Farmers"
+        link2="/addnew"
+        link1="/addFarmer"
       />
     ),
     icon: <GiWheat />,
@@ -103,7 +103,7 @@ const SideBar = ({ children }) => {
     },
   };
   return (
-    <div className='main-container'>
+    <div className="main-container">
       <motion.div
         animate={{
           width: isOpen ? "200px" : "50px",
@@ -115,25 +115,25 @@ const SideBar = ({ children }) => {
             // damping: 11,
           },
         }}
-        className='sidebar'
+        className="sidebar"
       >
-        <div className='top_section'>
+        <div className="top_section">
           {isOpen && (
             <motion.h1
-              initial='hidden'
-              animate='show'
-              exit='hidden'
+              initial="hidden"
+              animate="show"
+              exit="hidden"
               variants={showAnimation}
-              className='logo'
+              className="logo"
             >
               Logo
             </motion.h1>
           )}
-          <div className='bars' onClick={toggle}>
+          <div className="bars" onClick={toggle}>
             {isOpen ? <ImCross /> : <FaBars />}
           </div>
         </div>
-        <div className='search'>
+        <div className="search">
           {/* <div className='search_icon'>
             <BiSearch />
           </div>
@@ -149,23 +149,23 @@ const SideBar = ({ children }) => {
             )}
           </AnimatePresence> */}
         </div>
-        <section className='routes'>
+        <section className="routes">
           {routes.map((item) => (
             <NavLink
-              activeClassName='active'
+              activeClassName="active"
               to={item.path}
               key={item.name}
-              className='link'
+              className="link"
             >
-              <div className='icon'> {item.icon} </div>
+              <div className="icon"> {item.icon} </div>
               <AnimatePresence>
                 {isOpen && (
                   <motion.div
-                    initial='hidden'
-                    animate='show'
-                    exit='hidden'
+                    initial="hidden"
+                    animate="show"
+                    exit="hidden"
                     variants={showAnimation}
-                    className='link_text'
+                    className="link_text"
                   >
                     {item.name}
                   </motion.div>
