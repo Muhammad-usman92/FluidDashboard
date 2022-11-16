@@ -1,3 +1,15 @@
 .user-filter{
     margin-left: 12px;
 }
+.view-button{
+    background-color: #D2AB41 !important;
+    border-radius: 30px;
+}
+.update-button{
+    background-color: #4BA064 !important;
+    border-radius: 30px;
+}
+.delete-button{
+    background-color: #FF5E5E !important;
+    border-radius: 30px;
+}

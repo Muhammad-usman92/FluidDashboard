@@ -160,7 +160,220 @@ const AllUsers = () => {
               placeholder="Search"
               aria-label="Search"
             />
-          
+          </div>
+        </div>
+        <div className="container">
+          <div className="row mt-5">
+            <table class="table bg-light" style={{ borderRadius: "10px" }}>
+              <thead>
+                <tr>
+                  <th scope="col">Sr:No</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">NIC</th>
+                  <th scope="col">District</th>
+                  <th scope="col">UC</th>
+                  <th scope="col">Deh</th>
+                  <th scope="col">Mobile No</th>
+                  <th scope="col"></th>
+                  <th scope="col"></th>
+                  <th scope="col"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>MUhammad usman</td>
+                  <td>41303-65890095</td>
+                  <td>Hyderabad</td>
+                  <td>Qasimabad</td>
+                  <td>Wadhu wah</td>
+                  <td>0314689575</td>
+                  <td>
+                    <button type="button" class="btn btn-warning view-button">
+                      View
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-warning update-button">
+                      Update
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-warning delete-button">
+                      Delete
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Abdul Wahab</td>
+                  <td>41303-68798095</td>
+                  <td>Larkana</td>
+                  <td>Latifabad</td>
+                  <td>defnece</td>
+                  <td>0314615675</td>
+                  <td>
+                    <button type="button" class="btn btn-warning view-button">
+                      View
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-warning update-button">
+                      Update
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-warning delete-button">
+                      Delete
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Abdul Wahab</td>
+                  <td>41303-68798095</td>
+                  <td>Larkana</td>
+                  <td>Latifabad</td>
+                  <td>defnece</td>
+                  <td>0314615675</td>
+                  <td>
+                    <button type="button" class="btn btn-warning view-button">
+                      View
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-warning update-button">
+                      Update
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-warning delete-button">
+                      Delete
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Abdul Wahab</td>
+                  <td>41303-68798095</td>
+                  <td>Larkana</td>
+                  <td>Latifabad</td>
+                  <td>defnece</td>
+                  <td>0314615675</td>
+                  <td>
+                    <button type="button" class="btn btn-warning view-button">
+                      View
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-warning update-button">
+                      Update
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-warning delete-button">
+                      Delete
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Abdul Wahab</td>
+                  <td>41303-68798095</td>
+                  <td>Larkana</td>
+                  <td>Latifabad</td>
+                  <td>defnece</td>
+                  <td>0314615675</td>
+                  <td>
+                    <button type="button" class="btn btn-warning view-button">
+                      View
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-warning update-button">
+                      Update
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-warning delete-button">
+                      Delete
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>Abdul Wahab</td>
+                  <td>41303-68798095</td>
+                  <td>Larkana</td>
+                  <td>Latifabad</td>
+                  <td>defnece</td>
+                  <td>0314615675</td>
+                  <td>
+                    <button type="button" class="btn btn-warning view-button">
+                      View
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-warning update-button">
+                      Update
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-warning delete-button">
+                      Delete
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>Abdul Wahab</td>
+                  <td>41303-68798095</td>
+                  <td>Larkana</td>
+                  <td>Latifabad</td>
+                  <td>defnece</td>
+                  <td>0314615675</td>
+                  <td>
+                    <button type="button" class="btn btn-warning view-button">
+                      View
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-warning update-button">
+                      Update
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-warning delete-button">
+                      Delete
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td>Abdul Wahab</td>
+                  <td>41303-68798095</td>
+                  <td>Larkana</td>
+                  <td>Latifabad</td>
+                  <td>defnece</td>
+                  <td>0314615675</td>
+                  <td>
+                    <button type="button" class="btn btn-warning view-button">
+                      View
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-warning update-button">
+                      Update
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-warning delete-button">
+                      Delete
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
