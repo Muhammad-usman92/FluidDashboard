@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import css from "./DashBoard.module.css";
-import { MdOutlinePersonOutline } from "react-icons/md";
-import { BsCaretDownFill } from "react-icons/bs";
 import BarChart from "./BarChart";
 import { UserData } from "../../utils/Data";
 import Box from "./Box";
