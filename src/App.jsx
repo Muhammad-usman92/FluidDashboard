@@ -9,14 +9,15 @@ import Orders from "./pages/Orders";
 import Saved from "./pages/Saved";
 import SideBar from "./components/SideBar";
 import Settings from "./pages/Settings";
-import AddNew from "./components/Users/AddNew"
+import AddNew from "./components/Users/AddNew";
+import AllUsers from "./components/Users/AllUsers";
 function App() {
   return (
     <>
       <Router>
         <Routes>
           <Route
-            path="/"
+            path='/'
             element={
               <SideBar>
                 <DashBoard />
@@ -24,7 +25,7 @@ function App() {
             }
           />
           <Route
-            path="/users"
+            path='/users'
             element={
               <SideBar>
                 <Users />
@@ -32,7 +33,7 @@ function App() {
             }
           />
           <Route
-            path="/addnew"
+            path='/addnew'
             element={
               <SideBar>
                 <AddNew />
@@ -40,7 +41,15 @@ function App() {
             }
           />
           <Route
-            path="/messages"
+            path='/allusers'
+            element={
+              <SideBar>
+                <AllUsers />
+              </SideBar>
+            }
+          />
+          <Route
+            path='/messages'
             element={
               <SideBar>
                 <Messages />
@@ -48,7 +57,7 @@ function App() {
             }
           />
           <Route
-            path="/analytics"
+            path='/analytics'
             element={
               <SideBar>
                 <Analytics />
@@ -56,7 +65,7 @@ function App() {
             }
           />
           <Route
-            path="/file-manager"
+            path='/file-manager'
             element={
               <SideBar>
                 <FileManager />
@@ -64,7 +73,7 @@ function App() {
             }
           />
           <Route
-            path="/orders"
+            path='/orders'
             element={
               <SideBar>
                 <Orders />
@@ -72,7 +81,7 @@ function App() {
             }
           />
           <Route
-            path="/saved"
+            path='/saved'
             element={
               <SideBar>
                 <Saved />
@@ -80,14 +89,14 @@ function App() {
             }
           />
           <Route
-            path="/settings"
+            path='/settings'
             element={
               <SideBar>
                 <Settings />
               </SideBar>
             }
           />
-          <Route path="*" element={<>not found</>} />
+          <Route path='*' element={<>not found</>} />
         </Routes>
       </Router>
     </>

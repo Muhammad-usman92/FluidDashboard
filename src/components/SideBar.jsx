@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { NavLink } from "react-router-dom";
 import { FaBars, FaHome, FaUser } from "react-icons/fa";
-// import { MdMessage } from "react-icons/md";
+import { GiWheat } from "react-icons/gi";
 // import { BiAnalyse, BiSearch } from "react-icons/bi";
 // import { BiCog } from "react-icons/bi";
 // import { AiFillHeart, AiTwotoneFileExclamation } from "react-icons/ai";
@@ -18,14 +18,30 @@ const routes = [
   },
   {
     path: "",
-    name: <DropDown />,
+    name: (
+      <DropDown
+        Name='Users'
+        drop1='Add New User'
+        drop2='All Users'
+        link2='/addnew'
+        link1='/allusers'
+      />
+    ),
     icon: <FaUser />,
   },
-  // {
-  //   path: "/messages",
-  //   name: "Messages",
-  //   icon: <MdMessage />,
-  // },
+  {
+    path: "",
+    name: (
+      <DropDown
+        Name='Farmers'
+        drop1='Add New Farmer'
+        drop2='All Farmers'
+        link2='/addnew'
+        link1='/allusers'
+      />
+    ),
+    icon: <GiWheat />,
+  },
   // {
   //   path: "/analytics",
   //   name: "Analytics",
@@ -91,37 +107,36 @@ const SideBar = ({ children }) => {
     },
   };
   return (
-    <div className="main-container">
+    <div className='main-container'>
       <motion.div
         animate={{
           width: isOpen ? "250px" : "45px",
           transition: {
-
             duration: 0.2,
             // type: "spring",
             // damping: 11,
           },
         }}
-        className="sidebar"
+        className='sidebar'
       >
-        <div className="top_section">
+        <div className='top_section'>
           {isOpen && (
             <motion.h1
-              initial="hidden"
-              animate="show"
-              exit="hidden"
+              initial='hidden'
+              animate='show'
+              exit='hidden'
               variants={showAnimation}
-              className="logo"
+              className='logo'
             >
               Logo
             </motion.h1>
           )}
-          <div className="bars" onClick={toggle}>
+          <div className='bars' onClick={toggle}>
             {/* <FaBars onClick={toggle} /> */}
             {isOpen ? <ImCross /> : <FaBars />}
           </div>
         </div>
-        <div className="search">
+        <div className='search'>
           {/* <div className='search_icon'>
             <BiSearch />
           </div>
@@ -137,23 +152,23 @@ const SideBar = ({ children }) => {
             )}
           </AnimatePresence> */}
         </div>
-        <section className="routes">
+        <section className='routes'>
           {routes.map((item) => (
             <NavLink
-              activeClassName="active"
+              activeClassName='active'
               to={item.path}
               key={item.name}
-              className="link"
+              className='link'
             >
-              <div className="icon"> {item.icon} </div>
+              <div className='icon'> {item.icon} </div>
               <AnimatePresence>
                 {isOpen && (
                   <motion.div
-                    initial="hidden"
-                    animate="show"
-                    exit="hidden"
+                    initial='hidden'
+                    animate='show'
+                    exit='hidden'
                     variants={showAnimation}
-                    className="link_text"
+                    className='link_text'
                   >
                     {item.name}
                   </motion.div>

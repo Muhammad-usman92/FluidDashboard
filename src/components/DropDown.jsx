@@ -1,26 +1,26 @@
 import React from "react";
 import { Link } from "react-router-dom";
-const DropDown = () => {
+const DropDown = ({ Name, drop1, drop2, link1, link2 }) => {
   return (
-    <div class="dropdown">
+    <div class='dropdown'>
       <button
-        class="dropdown-toggle dropp"
-        type="button"
-        id="dropdownMenuButton1"
-        data-bs-toggle="dropdown"
-        aria-expanded="false"
+        class='dropdown-toggle dropp'
+        type='button'
+        id='dropdownMenuButton1'
+        data-bs-toggle='dropdown'
+        aria-expanded='false'
       >
-        Users
+        {Name}
       </button>
-      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+      <ul class='dropdown-menu' aria-labelledby='dropdownMenuButton1'>
         <li>
-          <Link class="dropdown-item" to="#">
-            All USers
+          <Link class='dropdown-item' to={link1}>
+            {drop1}
           </Link>
         </li>
         <li>
-          <Link class="dropdown-item" to="/addnew">
-            Add New User
+          <Link class='dropdown-item' to={link2}>
+            {drop2}
           </Link>
         </li>
       </ul>
