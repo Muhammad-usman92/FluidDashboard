@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const AllUsers = () => {
   return (
     <div>
-      <TopBar />
+      <TopBar heading='Users' heading2='All Users' />
 
       <div className='container'>
         <h4 className='mt-5'>All District User</h4>
@@ -25,17 +25,17 @@ const AllUsers = () => {
               </button>
               <ul class='dropdown-menu' aria-labelledby='dropdownMenuButton1'>
                 <li>
-                  <Link class='dropdown-item' href='#'>
+                  <Link class='dropdown-item' to='#'>
                     Action
                   </Link>
                 </li>
                 <li>
-                  <Link class='dropdown-item' href='#'>
+                  <Link class='dropdown-item' to='#'>
                     Another
                   </Link>
                 </li>
                 <li>
-                  <Link class='dropdown-item' href='#'>
+                  <Link class='dropdown-item' to='#'>
                     Another
                   </Link>
                 </li>
@@ -53,17 +53,17 @@ const AllUsers = () => {
               </button>
               <ul class='dropdown-menu' aria-labelledby='dropdownMenuButton1'>
                 <li>
-                  <Link class='dropdown-item' href='#'>
+                  <Link class='dropdown-item' to='#'>
                     Action
                   </Link>
                 </li>
                 <li>
-                  <Link class='dropdown-item' href='#'>
+                  <Link class='dropdown-item' to='#'>
                     Another
                   </Link>
                 </li>
                 <li>
-                  <Link class='dropdown-item' href='#'>
+                  <Link class='dropdown-item' to='#'>
                     Another
                   </Link>
                 </li>
@@ -81,17 +81,17 @@ const AllUsers = () => {
               </button>
               <ul class='dropdown-menu' aria-labelledby='dropdownMenuButton1'>
                 <li>
-                  <Link class='dropdown-item' href='#'>
+                  <Link class='dropdown-item' to='#'>
                     Action
                   </Link>
                 </li>
                 <li>
-                  <Link class='dropdown-item' href='#'>
+                  <Link class='dropdown-item' to='#'>
                     Another
                   </Link>
                 </li>
                 <li>
-                  <Link class='dropdown-item' href='#'>
+                  <Link class='dropdown-item' to='#'>
                     Another
                   </Link>
                 </li>
@@ -109,17 +109,17 @@ const AllUsers = () => {
               </button>
               <ul class='dropdown-menu' aria-labelledby='dropdownMenuButton1'>
                 <li>
-                  <Link class='dropdown-item' href='#'>
+                  <Link class='dropdown-item' to='#'>
                     Action
                   </Link>
                 </li>
                 <li>
-                  <Link class='dropdown-item' href='#'>
+                  <Link class='dropdown-item' to='#'>
                     Another
                   </Link>
                 </li>
                 <li>
-                  <Link class='dropdown-item' href='#'>
+                  <Link class='dropdown-item' to='#'>
                     Another
                   </Link>
                 </li>
@@ -137,17 +137,17 @@ const AllUsers = () => {
               </button>
               <ul class='dropdown-menu' aria-labelledby='dropdownMenuButton1'>
                 <li>
-                  <Link class='dropdown-item' href='#'>
+                  <Link class='dropdown-item' to='#'>
                     Action
                   </Link>
                 </li>
                 <li>
-                  <Link class='dropdown-item' href='#'>
+                  <Link class='dropdown-item' to='#'>
                     Another
                   </Link>
                 </li>
                 <li>
-                  <Link class='dropdown-item' href='#'>
+                  <Link class='dropdown-item' to='#'>
                     Another
                   </Link>
                 </li>

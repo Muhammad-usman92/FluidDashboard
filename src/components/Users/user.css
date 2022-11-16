@@ -1,15 +1,27 @@
-.user-filter{
+.user-filter {
     margin-left: 12px;
 }
-.view-button{
-    background-color: #D2AB41 !important;
+
+.view-button {
+    background-color: #d2ab41 !important;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    font-size: 14px;
+}
+
+.update-button {
+    background-color: #4ba064 !important;
+    border: none;
+    color: white;
+    font-size: 14px;
     border-radius: 30px;
 }
-.update-button{
-    background-color: #4BA064 !important;
-    border-radius: 30px;
-}
-.delete-button{
-    background-color: #FF5E5E !important;
+
+.delete-button {
+    background-color: #ff5e5e !important;
+    border: none;
+    color: white;
+    font-size: 14px;
     border-radius: 30px;
 }

@@ -1,19 +1,10 @@
 import React from "react";
-import css from "./AddNew.module.css";
 import FarmerImg from "../../img/farmer-img.webp";
 import TopBar from "../TopBar/TopBar";
 const AddNew = () => {
   return (
     <div>
-      <div className={css.top}>
-        <div className='container'>
-          <div className='row'>
-            <div className='col-md-12'>
-              <TopBar heading='Users' heading2='Add new user' />
-            </div>
-          </div>
-        </div>
-      </div>
+      <TopBar heading='Users' heading2='Add new user' />
       <div className='container'>
         <div
           className='mt-5'
