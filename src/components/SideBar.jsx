@@ -3,10 +3,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import { NavLink } from "react-router-dom";
 import { FaBars, FaHome, FaUser } from "react-icons/fa";
 import { GiWheat } from "react-icons/gi";
-// import { BiAnalyse, BiSearch } from "react-icons/bi";
-// import { BiCog } from "react-icons/bi";
-// import { AiFillHeart, AiTwotoneFileExclamation } from "react-icons/ai";
-// import { BsCartCheck } from "react-icons/bs";
 import { ImCross } from "react-icons/im";
 import DropDown from "./DropDown";
 //routes
@@ -111,6 +107,8 @@ const SideBar = ({ children }) => {
       <motion.div
         animate={{
           width: isOpen ? "250px" : "45px",
+          position: isOpen ? "fixed" : "fixed",
+          height: isOpen ? "100vh" : "100%",
           transition: {
             duration: 0.2,
             // type: "spring",
@@ -132,7 +130,6 @@ const SideBar = ({ children }) => {
             </motion.h1>
           )}
           <div className='bars' onClick={toggle}>
-            {/* <FaBars onClick={toggle} /> */}
             {isOpen ? <ImCross /> : <FaBars />}
           </div>
         </div>
@@ -178,7 +175,14 @@ const SideBar = ({ children }) => {
           ))}
         </section>
       </motion.div>
-      <main>{children}</main>
+      <motion.main
+        animate={{
+          width: isOpen ? "90%" : "100%",
+          marginLeft: isOpen ? "15.5rem" : "0px",
+        }}
+      >
+        {children}
+      </motion.main>
     </div>
   );
 };
