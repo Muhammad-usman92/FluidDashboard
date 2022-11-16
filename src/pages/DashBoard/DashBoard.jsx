@@ -18,7 +18,7 @@ const DashBoard = () => {
   return (
     <div className='fluid'>
       {/* Top Section */}
-      <TopBar heading='Dashboard' />
+      <TopBar heading='Dashboard' heading2='Home' />
       {/* top 1 */}
       <div className='container mt-4'>
         <div className={css.boxes}>
