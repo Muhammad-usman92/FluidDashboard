@@ -11,9 +11,11 @@ const TopBar = ({ heading, heading2 }) => {
         <div className='row'>
           <div className='col-md-12'>
             <div className={css.dash_top}>
-              <h4>
-                {heading} <IoIosArrowForward /> {heading2}
-              </h4>
+              <div>
+                <h4>
+                  {heading} <IoIosArrowForward /> {heading2}
+                </h4>
+              </div>
               <div className={css.login}>
                 <span>{<MdOutlinePersonOutline />}</span>
                 <span>Admin</span>

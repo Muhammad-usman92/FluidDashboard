@@ -106,7 +106,7 @@ const SideBar = ({ children }) => {
     <div className='main-container'>
       <motion.div
         animate={{
-          width: isOpen ? "200px" : "45px",
+          width: isOpen ? "200px" : "50px",
           position: isOpen ? "fixed" : "fixed",
           height: isOpen ? "100vh" : "100%",
           transition: {
