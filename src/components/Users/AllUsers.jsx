@@ -1,182 +1,183 @@
 import React from "react";
 import TopBar from "../TopBar/TopBar";
 import "./user.css";
+import { Link } from "react-router-dom";
 const AllUsers = () => {
   return (
     <div>
       <TopBar />
 
-      <div className="container">
-        <h4 className="mt-5">All District User</h4>
+      <div className='container'>
+        <h4 className='mt-5'>All District User</h4>
         <p>Filters</p>
 
-        <div className="row">
-          <div className="col-lg-8 " style={{ display: "flex" }}>
-            <div class="dropdown user-filter">
+        <div className='row'>
+          <div className='col-lg-8 ' style={{ display: "flex" }}>
+            <div class='dropdown user-filter'>
               <button
-                class="btn btn-secondary dropdown-toggle"
-                type="button"
-                id="dropdownMenuButton1"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
+                class='btn btn-secondary dropdown-toggle'
+                type='button'
+                id='dropdownMenuButton1'
+                data-bs-toggle='dropdown'
+                aria-expanded='false'
               >
                 Dropdown
               </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <ul class='dropdown-menu' aria-labelledby='dropdownMenuButton1'>
                 <li>
-                  <a class="dropdown-item" href="#">
+                  <Link class='dropdown-item' href='#'>
                     Action
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">
+                  <Link class='dropdown-item' href='#'>
                     Another
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">
+                  <Link class='dropdown-item' href='#'>
                     Another
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>{" "}
-            <div class="dropdown user-filter">
+            <div class='dropdown user-filter'>
               <button
-                class="btn btn-secondary dropdown-toggle"
-                type="button"
-                id="dropdownMenuButton1"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
+                class='btn btn-secondary dropdown-toggle'
+                type='button'
+                id='dropdownMenuButton1'
+                data-bs-toggle='dropdown'
+                aria-expanded='false'
               >
                 Dropdown
               </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <ul class='dropdown-menu' aria-labelledby='dropdownMenuButton1'>
                 <li>
-                  <a class="dropdown-item" href="#">
+                  <Link class='dropdown-item' href='#'>
                     Action
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">
+                  <Link class='dropdown-item' href='#'>
                     Another
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">
+                  <Link class='dropdown-item' href='#'>
                     Another
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>{" "}
-            <div class="dropdown user-filter">
+            <div class='dropdown user-filter'>
               <button
-                class="btn btn-secondary dropdown-toggle"
-                type="button"
-                id="dropdownMenuButton1"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
+                class='btn btn-secondary dropdown-toggle'
+                type='button'
+                id='dropdownMenuButton1'
+                data-bs-toggle='dropdown'
+                aria-expanded='false'
               >
                 Dropdown
               </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <ul class='dropdown-menu' aria-labelledby='dropdownMenuButton1'>
                 <li>
-                  <a class="dropdown-item" href="#">
+                  <Link class='dropdown-item' href='#'>
                     Action
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">
+                  <Link class='dropdown-item' href='#'>
                     Another
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">
+                  <Link class='dropdown-item' href='#'>
                     Another
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>{" "}
-            <div class="dropdown user-filter">
+            <div class='dropdown user-filter'>
               <button
-                class="btn btn-secondary dropdown-toggle"
-                type="button"
-                id="dropdownMenuButton1"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
+                class='btn btn-secondary dropdown-toggle'
+                type='button'
+                id='dropdownMenuButton1'
+                data-bs-toggle='dropdown'
+                aria-expanded='false'
               >
                 Dropdown
               </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <ul class='dropdown-menu' aria-labelledby='dropdownMenuButton1'>
                 <li>
-                  <a class="dropdown-item" href="#">
+                  <Link class='dropdown-item' href='#'>
                     Action
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">
+                  <Link class='dropdown-item' href='#'>
                     Another
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">
+                  <Link class='dropdown-item' href='#'>
                     Another
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>{" "}
-            <div class="dropdown user-filter">
+            <div class='dropdown user-filter'>
               <button
-                class="btn btn-secondary dropdown-toggle"
-                type="button"
-                id="dropdownMenuButton1"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
+                class='btn btn-secondary dropdown-toggle'
+                type='button'
+                id='dropdownMenuButton1'
+                data-bs-toggle='dropdown'
+                aria-expanded='false'
               >
                 Dropdown
               </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <ul class='dropdown-menu' aria-labelledby='dropdownMenuButton1'>
                 <li>
-                  <a class="dropdown-item" href="#">
+                  <Link class='dropdown-item' href='#'>
                     Action
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">
+                  <Link class='dropdown-item' href='#'>
                     Another
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">
+                  <Link class='dropdown-item' href='#'>
                     Another
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>{" "}
           </div>
-          <div className="col-lg-4">
+          <div className='col-lg-4'>
             <input
-              className="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
+              className='form-control me-2'
+              type='search'
+              placeholder='Search'
+              aria-label='Search'
             />
           </div>
         </div>
-        <div className="container">
-          <div className="row mt-5">
-            <table class="table bg-light" style={{ borderRadius: "10px" }}>
+        <div className='container'>
+          <div className='row mt-5'>
+            <table class='table bg-light' style={{ borderRadius: "10px" }}>
               <thead>
                 <tr>
-                  <th scope="col">Sr:No</th>
-                  <th scope="col">Name</th>
-                  <th scope="col">NIC</th>
-                  <th scope="col">District</th>
-                  <th scope="col">UC</th>
-                  <th scope="col">Deh</th>
-                  <th scope="col">Mobile No</th>
-                  <th scope="col"></th>
-                  <th scope="col"></th>
-                  <th scope="col"></th>
+                  <th scope='col'>Sr:No</th>
+                  <th scope='col'>Name</th>
+                  <th scope='col'>NIC</th>
+                  <th scope='col'>District</th>
+                  <th scope='col'>UC</th>
+                  <th scope='col'>Deh</th>
+                  <th scope='col'>Mobile No</th>
+                  <th scope='col'></th>
+                  <th scope='col'></th>
+                  <th scope='col'></th>
                 </tr>
               </thead>
               <tbody>
@@ -189,17 +190,17 @@ const AllUsers = () => {
                   <td>Wadhu wah</td>
                   <td>0314689575</td>
                   <td>
-                    <button type="button" class="btn btn-warning view-button">
+                    <button type='button' class='btn btn-warning view-button'>
                       View
                     </button>
                   </td>
                   <td>
-                    <button type="button" class="btn btn-warning update-button">
+                    <button type='button' class='btn btn-warning update-button'>
                       Update
                     </button>
                   </td>
                   <td>
-                    <button type="button" class="btn btn-warning delete-button">
+                    <button type='button' class='btn btn-warning delete-button'>
                       Delete
                     </button>
                   </td>
@@ -213,17 +214,17 @@ const AllUsers = () => {
                   <td>defnece</td>
                   <td>0314615675</td>
                   <td>
-                    <button type="button" class="btn btn-warning view-button">
+                    <button type='button' class='btn btn-warning view-button'>
                       View
                     </button>
                   </td>
                   <td>
-                    <button type="button" class="btn btn-warning update-button">
+                    <button type='button' class='btn btn-warning update-button'>
                       Update
                     </button>
                   </td>
                   <td>
-                    <button type="button" class="btn btn-warning delete-button">
+                    <button type='button' class='btn btn-warning delete-button'>
                       Delete
                     </button>
                   </td>
@@ -237,17 +238,17 @@ const AllUsers = () => {
                   <td>defnece</td>
                   <td>0314615675</td>
                   <td>
-                    <button type="button" class="btn btn-warning view-button">
+                    <button type='button' class='btn btn-warning view-button'>
                       View
                     </button>
                   </td>
                   <td>
-                    <button type="button" class="btn btn-warning update-button">
+                    <button type='button' class='btn btn-warning update-button'>
                       Update
                     </button>
                   </td>
                   <td>
-                    <button type="button" class="btn btn-warning delete-button">
+                    <button type='button' class='btn btn-warning delete-button'>
                       Delete
                     </button>
                   </td>
@@ -261,17 +262,17 @@ const AllUsers = () => {
                   <td>defnece</td>
                   <td>0314615675</td>
                   <td>
-                    <button type="button" class="btn btn-warning view-button">
+                    <button type='button' class='btn btn-warning view-button'>
                       View
                     </button>
                   </td>
                   <td>
-                    <button type="button" class="btn btn-warning update-button">
+                    <button type='button' class='btn btn-warning update-button'>
                       Update
                     </button>
                   </td>
                   <td>
-                    <button type="button" class="btn btn-warning delete-button">
+                    <button type='button' class='btn btn-warning delete-button'>
                       Delete
                     </button>
                   </td>
@@ -285,17 +286,17 @@ const AllUsers = () => {
                   <td>defnece</td>
                   <td>0314615675</td>
                   <td>
-                    <button type="button" class="btn btn-warning view-button">
+                    <button type='button' class='btn btn-warning view-button'>
                       View
                     </button>
                   </td>
                   <td>
-                    <button type="button" class="btn btn-warning update-button">
+                    <button type='button' class='btn btn-warning update-button'>
                       Update
                     </button>
                   </td>
                   <td>
-                    <button type="button" class="btn btn-warning delete-button">
+                    <button type='button' class='btn btn-warning delete-button'>
                       Delete
                     </button>
                   </td>
@@ -309,17 +310,17 @@ const AllUsers = () => {
                   <td>defnece</td>
                   <td>0314615675</td>
                   <td>
-                    <button type="button" class="btn btn-warning view-button">
+                    <button type='button' class='btn btn-warning view-button'>
                       View
                     </button>
                   </td>
                   <td>
-                    <button type="button" class="btn btn-warning update-button">
+                    <button type='button' class='btn btn-warning update-button'>
                       Update
                     </button>
                   </td>
                   <td>
-                    <button type="button" class="btn btn-warning delete-button">
+                    <button type='button' class='btn btn-warning delete-button'>
                       Delete
                     </button>
                   </td>
@@ -333,17 +334,17 @@ const AllUsers = () => {
                   <td>defnece</td>
                   <td>0314615675</td>
                   <td>
-                    <button type="button" class="btn btn-warning view-button">
+                    <button type='button' class='btn btn-warning view-button'>
                       View
                     </button>
                   </td>
                   <td>
-                    <button type="button" class="btn btn-warning update-button">
+                    <button type='button' class='btn btn-warning update-button'>
                       Update
                     </button>
                   </td>
                   <td>
-                    <button type="button" class="btn btn-warning delete-button">
+                    <button type='button' class='btn btn-warning delete-button'>
                       Delete
                     </button>
                   </td>
@@ -357,17 +358,17 @@ const AllUsers = () => {
                   <td>defnece</td>
                   <td>0314615675</td>
                   <td>
-                    <button type="button" class="btn btn-warning view-button">
+                    <button type='button' class='btn btn-warning view-button'>
                       View
                     </button>
                   </td>
                   <td>
-                    <button type="button" class="btn btn-warning update-button">
+                    <button type='button' class='btn btn-warning update-button'>
                       Update
                     </button>
                   </td>
                   <td>
-                    <button type="button" class="btn btn-warning delete-button">
+                    <button type='button' class='btn btn-warning delete-button'>
                       Delete
                     </button>
                   </td>
