@@ -155,9 +155,11 @@ const AddNew = () => {
 
                 <div>
                   <input
-                    type='checkbox'
                     class='form-check-input'
-                    id
+                    type='radio'
+                    name='exampleRadios'
+                    id='exampleRadios1'
+                    value='Male'
                     className='mx-2'
                   />
 
@@ -167,11 +169,14 @@ const AddNew = () => {
                 </div>
                 <div>
                   <input
-                    type='checkbox'
                     class='form-check-input'
-                    id
+                    type='radio'
+                    name='exampleRadios'
+                    id='exampleRadios2'
+                    value='Female'
                     className='mx-2'
                   />
+
                   <label htmlFor='exampleInputEmail1' className='form-label'>
                     Female
                   </label>
@@ -372,6 +377,100 @@ const AddNew = () => {
                 </div>
               </div>
             </div>
+          </div>
+          <hr />
+          {/* Bank details */}
+          <div className='row'>
+            <h4>Bank & Details: </h4>
+            <div className='col-lg-4'>
+              <div className='mb-3'>
+                <label htmlFor='exampleInputEmail1' className='form-label'>
+                  Title of Account
+                </label>
+                <input
+                  type='number'
+                  className='form-control'
+                  id='exampleInputEmail1'
+                  aria-describedby='emailHelp'
+                />
+              </div>
+            </div>
+            <div className='col-lg-4'>
+              <div className='mb-3'>
+                <label htmlFor='exampleInputEmail1' className='form-label'>
+                  Account No
+                </label>
+                <input
+                  type='text'
+                  className='form-control'
+                  id='exampleInputEmail1'
+                  aria-describedby='emailHelp'
+                />
+              </div>
+            </div>
+            <div className='col-lg-4'>
+              <div className='mb-3'>
+                <label htmlFor='exampleInputEmail1' className='form-label'>
+                  Bank Name
+                </label>
+                <input
+                  type='text'
+                  className='form-control'
+                  id='exampleInputEmail1'
+                  aria-describedby='emailHelp'
+                />
+              </div>
+            </div>
+            <div className='col-lg-4'>
+              <div className='mb-3'>
+                <label htmlFor='exampleInputEmail1' className='form-label'>
+                  Branch Code
+                </label>
+                <input
+                  type='text'
+                  className='form-control'
+                  id='exampleInputEmail1'
+                  aria-describedby='emailHelp'
+                />
+              </div>
+            </div>
+          </div>
+          <hr />
+          {/* Document Details */}
+          <div className='row'>
+            <h4>Documents Uploaded: </h4>
+            <div className='col-lg-12 d-flex justify-content-around'>
+              <div>
+                <label htmlFor='exampleInputEmail1' className='form-label'>
+                  Documents Collected:
+                </label>
+              </div>
+              <div className='d-flex gap-4'>
+                <div>
+                  <input
+                    type='checkbox'
+                    class='form-check-input'
+                    className='mx-2'
+                  />
+
+                  <label htmlFor='exampleInputEmail1' className='form-label'>
+                    CNIC
+                  </label>
+                </div>
+                <div>
+                  <input
+                    type='checkbox'
+                    class='form-check-input'
+                    className='mx-2'
+                  />
+
+                  <label htmlFor='exampleInputEmail1' className='form-label'>
+                    Forms VII/ VIII and Affidavit (Land Documents)
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div className='col-lg-12 d-flex justify-content-center'>asd</div>
           </div>
           <hr />
         </form>
