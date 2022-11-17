@@ -13,130 +13,130 @@ const AddNew = () => {
           <div className='row'>
             <div className='col-lg-4'>
               <div className='mb-3'>
-                <label htmlFor='exampleInputEmail1' className='form-label'>
+                <label htmlFor='District' className='form-label'>
                   District
                 </label>
                 <input
                   type='text'
                   className='form-control'
-                  id='exampleInputEmail1'
+                  id='District'
                   aria-describedby='emailHelp'
                 />
               </div>
             </div>
             <div className='col-lg-4'>
               <div className='mb-3'>
-                <label htmlFor='exampleInputEmail1' className='form-label'>
+                <label htmlFor='Taluka' className='form-label'>
                   Taluka
                 </label>
                 <input
                   type='text'
                   className='form-control'
-                  id='exampleInputEmail1'
+                  id='Taluka'
                   aria-describedby='emailHelp'
                 />
               </div>
             </div>
             <div className='col-lg-4'>
               <div className='mb-3'>
-                <label htmlFor='exampleInputEmail1' className='form-label'>
+                <label htmlFor='Village' className='form-label'>
                   Village
                 </label>
                 <input
                   type='text'
                   className='form-control'
-                  id='exampleInputEmail1'
+                  id='Village'
                   aria-describedby='emailHelp'
                 />
               </div>
             </div>
             <div className='col-lg-4'>
               <div className='mb-3'>
-                <label htmlFor='exampleInputEmail1' className='form-label'>
+                <label htmlFor='UnionCouncil' className='form-label'>
                   Union Council
                 </label>
                 <input
                   type='text'
                   className='form-control'
-                  id='exampleInputEmail1'
+                  id='UnionCouncil'
                   aria-describedby='emailHelp'
                 />
               </div>
             </div>
             <div className='col-lg-4'>
               <div className='mb-3'>
-                <label htmlFor='exampleInputEmail1' className='form-label'>
+                <label htmlFor='Tappa' className='form-label'>
                   Tappa
                 </label>
                 <input
                   type='text'
                   className='form-control'
-                  id='exampleInputEmail1'
+                  id='Tappa'
                   aria-describedby='emailHelp'
                 />
               </div>
             </div>
             <div className='col-lg-4'>
               <div className='mb-3'>
-                <label htmlFor='exampleInputEmail1' className='form-label'>
+                <label htmlFor='Deh' className='form-label'>
                   Deh
                 </label>
                 <input
                   type='text'
                   className='form-control'
-                  id='exampleInputEmail1'
+                  id='Deh'
                   aria-describedby='emailHelp'
                 />
               </div>
             </div>
             <div className='col-lg-4'>
               <div className='mb-3'>
-                <label htmlFor='exampleInputEmail1' className='form-label'>
+                <label htmlFor='Name' className='form-label'>
                   Name
                 </label>
                 <input
                   type='text'
                   className='form-control'
-                  id='exampleInputEmail1'
+                  id='Name'
                   aria-describedby='emailHelp'
                 />
               </div>
             </div>
             <div className='col-lg-4'>
               <div className='mb-3'>
-                <label htmlFor='exampleInputEmail1' className='form-label'>
+                <label htmlFor='Father/HusbandName' className='form-label'>
                   Father/Husband Name
                 </label>
                 <input
                   type='text'
                   className='form-control'
-                  id='exampleInputEmail1'
+                  id='Father/HusbandName'
                   aria-describedby='emailHelp'
                 />
               </div>
             </div>
             <div className='col-lg-4'>
               <div className='mb-3'>
-                <label htmlFor='exampleInputEmail1' className='form-label'>
+                <label htmlFor='CNIC' className='form-label'>
                   CNIC
                 </label>
                 <input
                   type='text'
                   className='form-control'
-                  id='exampleInputEmail1'
+                  id='CNIC'
                   aria-describedby='emailHelp'
                 />
               </div>
             </div>
             <div className='col-lg-4'>
               <div className='mb-3'>
-                <label htmlFor='exampleInputEmail1' className='form-label'>
+                <label htmlFor='MobileNo' className='form-label'>
                   Mobile No
                 </label>
                 <input
                   type='number'
                   className='form-control'
-                  id='exampleInputEmail1'
+                  id='MobileNo'
                   aria-describedby='emailHelp'
                 />
               </div>
@@ -148,7 +148,7 @@ const AddNew = () => {
                 style={{ gap: "20px", marginTop: "40px" }}
               >
                 <div>
-                  <label htmlFor='exampleInputEmail1' className='form-label'>
+                  <label htmlFor='Gender' className='form-label'>
                     Gender:
                   </label>
                 </div>
@@ -163,7 +163,7 @@ const AddNew = () => {
                     className='mx-2'
                   />
 
-                  <label htmlFor='exampleInputEmail1' className='form-label'>
+                  <label htmlFor='Gender' className='form-label'>
                     Male
                   </label>
                 </div>
@@ -177,7 +177,7 @@ const AddNew = () => {
                     className='mx-2'
                   />
 
-                  <label htmlFor='exampleInputEmail1' className='form-label'>
+                  <label htmlFor='Gender' className='form-label'>
                     Female
                   </label>
                 </div>
@@ -189,7 +189,7 @@ const AddNew = () => {
                 style={{ gap: "20px", marginTop: "40px" }}
               >
                 <div>
-                  <label htmlFor='exampleInputEmail1' className='form-label'>
+                  <label htmlFor='OwnerType' className='form-label'>
                     Owner Type:
                   </label>
                 </div>
@@ -197,14 +197,14 @@ const AddNew = () => {
                 <div>
                   <input type='checkbox' class='form-check-input' id />
 
-                  <label htmlFor='exampleInputEmail1' className='form-label'>
+                  <label htmlFor='OwnerType' className='form-label'>
                     Owner
                   </label>
                 </div>
                 <div>
                   <input type='checkbox' class='form-check-input' id />
 
-                  <label htmlFor='exampleInputEmail1' className='form-label'>
+                  <label htmlFor='OwnerType' className='form-label'>
                     Makadedar(Contract)
                   </label>
                 </div>
@@ -217,65 +217,68 @@ const AddNew = () => {
             <h4>Beneficiary Details Cash Transfers:</h4>
             <div className='col-lg-4'>
               <div className='mb-3'>
-                <label htmlFor='exampleInputEmail1' className='form-label'>
+                <label htmlFor='BeneficiaryName' className='form-label'>
                   Name
                 </label>
                 <input
                   type='text'
                   className='form-control'
-                  id='exampleInputEmail1'
+                  id='BeneficiaryName'
                   aria-describedby='emailHelp'
                 />
               </div>
             </div>
             <div className='col-lg-4'>
               <div className='mb-3'>
-                <label htmlFor='exampleInputEmail1' className='form-label'>
+                <label
+                  htmlFor='BeneficiaryFather/HusbandName'
+                  className='form-label'
+                >
                   Father/Husband Name
                 </label>
                 <input
                   type='text'
                   className='form-control'
-                  id='exampleInputEmail1'
+                  id='BeneficiaryFather/HusbandName'
                   aria-describedby='emailHelp'
                 />
               </div>
             </div>
             <div className='col-lg-4'>
               <div className='mb-3'>
-                <label htmlFor='exampleInputEmail1' className='form-label'>
+                <label htmlFor='BeneficiaryCNIC' className='form-label'>
                   CNIC
                 </label>
                 <input
                   type='number'
                   className='form-control'
-                  id='exampleInputEmail1'
+                  id='BeneficiaryCNIC'
                   aria-describedby='emailHelp'
                 />
               </div>
             </div>
             <div className='col-lg-4'>
               <div className='mb-3'>
-                <label htmlFor='exampleInputEmail1' className='form-label'>
+                <label htmlFor='BeneficiaryMobNo' className='form-label'>
                   Mobile No
                 </label>
                 <input
                   type='number'
                   className='form-control'
-                  id='exampleInputEmail1'
+                  id='BeneficiaryMobNo'
                   aria-describedby='emailHelp'
                 />
               </div>
             </div>
             <div className='col-lg-4'>
               <div className='mb-3'>
-                <label htmlFor='exampleInputEmail1' className='form-label'>
+                <label htmlFor='BeneficiaryClaimDate' className='form-label'>
                   Claim Submission Date
                 </label>
                 <input
                   type='date'
                   className='form-control'
-                  id='exampleInputEmail1'
+                  id='BeneficiaryClaimDate'
                   aria-describedby='emailHelp'
                 />
               </div>
@@ -287,65 +290,65 @@ const AddNew = () => {
             <h4>Landholding & Cropping: </h4>
             <div className='col-lg-4'>
               <div className='mb-3'>
-                <label htmlFor='exampleInputEmail1' className='form-label'>
+                <label htmlFor='TotalLandholding' className='form-label'>
                   Total Landholding (Acre)
                 </label>
                 <input
                   type='number'
                   className='form-control'
-                  id='exampleInputEmail1'
+                  id='TotalLandholding'
                   aria-describedby='emailHelp'
                 />
               </div>
             </div>
             <div className='col-lg-4'>
               <div className='mb-3'>
-                <label htmlFor='exampleInputEmail1' className='form-label'>
+                <label htmlFor='Wheat' className='form-label'>
                   Wheat
                 </label>
                 <input
                   type='text'
                   className='form-control'
-                  id='exampleInputEmail1'
+                  id='Wheat'
                   aria-describedby='emailHelp'
                 />
               </div>
             </div>
             <div className='col-lg-4'>
               <div className='mb-3'>
-                <label htmlFor='exampleInputEmail1' className='form-label'>
+                <label htmlFor='Mustard' className='form-label'>
                   Mustard
                 </label>
                 <input
                   type='text'
                   className='form-control'
-                  id='exampleInputEmail1'
+                  id='Mustard'
                   aria-describedby='emailHelp'
                 />
               </div>
             </div>
             <div className='col-lg-4'>
               <div className='mb-3'>
-                <label htmlFor='exampleInputEmail1' className='form-label'>
+                <label htmlFor='Sunflower' className='form-label'>
                   Sunflower
                 </label>
                 <input
                   type='text'
                   className='form-control'
-                  id='exampleInputEmail1'
+                  id='Sunflower'
                   aria-describedby='emailHelp'
                 />
               </div>
             </div>
             <div className='col-lg-4'>
               <div className='mb-3'>
-                <label htmlFor='exampleInputEmail1' className='form-label'>
+                <label htmlFor='Other' className='form-label'>
                   Other
                 </label>
                 <input
                   type='text'
                   className='form-control'
-                  id='exampleInputEmail1'
+                  id='Other'
                   aria-describedby='emailHelp'
                 />
               </div>
@@ -353,10 +356,10 @@ const AddNew = () => {
             <div className='col-lg-4'>
               <div
                 className='d-flex '
-                style={{ gap: "20px", marginTop: "40px" }}
+                style={{ gap: "20px", marginTop: "30px" }}
               >
                 <div>
-                  <label htmlFor='exampleInputEmail1' className='form-label'>
+                  <label htmlFor='PreferredMode' className='form-label'>
                     Preferred Mode of Cash Transferred:
                   </label>
                 </div>
@@ -364,14 +367,14 @@ const AddNew = () => {
                 <div>
                   <input type='checkbox' class='form-check-input' id />
 
-                  <label htmlFor='exampleInputEmail1' className='form-label'>
+                  <label htmlFor='PreferredMode' className='form-label'>
                     Mobile Payments
                   </label>
                 </div>
                 <div>
                   <input type='checkbox' class='form-check-input' id />
 
-                  <label htmlFor='exampleInputEmail1' className='form-label'>
+                  <label htmlFor='BankAccount' className='form-label'>
                     Bank Account
                   </label>
                 </div>
@@ -384,52 +387,52 @@ const AddNew = () => {
             <h4>Bank & Details: </h4>
             <div className='col-lg-4'>
               <div className='mb-3'>
-                <label htmlFor='exampleInputEmail1' className='form-label'>
+                <label htmlFor='TitleOfAccount' className='form-label'>
                   Title of Account
                 </label>
                 <input
                   type='number'
                   className='form-control'
-                  id='exampleInputEmail1'
+                  id='TitleOfAccount'
                   aria-describedby='emailHelp'
                 />
               </div>
             </div>
             <div className='col-lg-4'>
               <div className='mb-3'>
-                <label htmlFor='exampleInputEmail1' className='form-label'>
+                <label htmlFor='AccountNo' className='form-label'>
                   Account No
                 </label>
                 <input
                   type='text'
                   className='form-control'
-                  id='exampleInputEmail1'
+                  id='AccountNo'
                   aria-describedby='emailHelp'
                 />
               </div>
             </div>
             <div className='col-lg-4'>
               <div className='mb-3'>
-                <label htmlFor='exampleInputEmail1' className='form-label'>
+                <label htmlFor='BankName' className='form-label'>
                   Bank Name
                 </label>
                 <input
                   type='text'
                   className='form-control'
-                  id='exampleInputEmail1'
+                  id='BankName'
                   aria-describedby='emailHelp'
                 />
               </div>
             </div>
             <div className='col-lg-4'>
               <div className='mb-3'>
-                <label htmlFor='exampleInputEmail1' className='form-label'>
+                <label htmlFor='BranchCode' className='form-label'>
                   Branch Code
                 </label>
                 <input
                   type='text'
                   className='form-control'
-                  id='exampleInputEmail1'
+                  id='BranchCode'
                   aria-describedby='emailHelp'
                 />
               </div>
