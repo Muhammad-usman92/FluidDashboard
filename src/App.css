@@ -33,9 +33,10 @@ main {
 .top_section {
     display: flex;
     gap: 30px;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 15px 10px;
+    background-color: #4ba064;
 }
 
 .logo {
@@ -92,6 +93,7 @@ a {
     transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045) !important;
     background: #4ba064;
     color: white;
+    border-radius: 5px;
 }
 
 .link:focus {
