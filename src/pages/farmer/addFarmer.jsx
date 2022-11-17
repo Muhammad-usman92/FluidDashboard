@@ -439,7 +439,7 @@ const AddNew = () => {
           {/* Document Details */}
           <div className='row'>
             <h4>Documents Uploaded: </h4>
-            <div className='col-lg-12 d-flex justify-content-around'>
+            <div className='col-lg-12 d-flex justify-content-evenly'>
               <div>
                 <label htmlFor='exampleInputEmail1' className='form-label'>
                   Documents Collected:
@@ -470,7 +470,41 @@ const AddNew = () => {
                 </div>
               </div>
             </div>
-            <div className='col-lg-12 d-flex justify-content-center'>asd</div>
+            <div className='col-lg-12 d-flex justify-content-center mt-4'>
+              <div class='form-group'>
+                <label for='exampleFormControlFile1' className='my-2'>
+                  Upload CNIC Front Side
+                </label>
+                <br />
+                <input
+                  type='file'
+                  class='form-control-file'
+                  id='exampleFormControlFile1'
+                />
+              </div>
+              <div class='form-group'>
+                <label for='exampleFormControlFile1' className='my-2'>
+                  Upload CNIC Back Side
+                </label>{" "}
+                <br />
+                <input
+                  type='file'
+                  class='form-control-file'
+                  id='exampleFormControlFile1'
+                />
+              </div>
+              <div class='form-group'>
+                <label for='exampleFormControlFile1' className='my-2'>
+                  Land Documents
+                </label>{" "}
+                <br />
+                <input
+                  type='file'
+                  class='form-control-file'
+                  id='exampleFormControlFile1'
+                />
+              </div>
+            </div>
           </div>
           <hr />
         </form>
