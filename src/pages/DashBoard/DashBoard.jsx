@@ -11,6 +11,7 @@ import icon7 from "../../img/icon7.svg";
 import icon8 from "../../img/icon8.svg";
 import icon9 from "../../img/icon9.svg";
 import icon10 from "../../img/icon10.svg";
+import BottomBar from "../../components/BottomBar/BottomBar";
 const DashBoard = () => {
   const [userData] = useState({
     labels: UserData.map((data) => data.year),
@@ -129,6 +130,9 @@ const DashBoard = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className='bottom'>
+        <BottomBar />
       </div>
     </div>
   );
