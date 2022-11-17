@@ -1,6 +1,7 @@
 import React from "react";
 import FarmerImg from "../../img/farmer-img.webp";
 import TopBar from "../TopBar/TopBar";
+import BottomBar from "../BottomBar/BottomBar";
 const AddNew = () => {
   return (
     <div>
@@ -286,6 +287,7 @@ const AddNew = () => {
           </div>
         </form>
       </div>
+      <BottomBar />
     </div>
   );
 };

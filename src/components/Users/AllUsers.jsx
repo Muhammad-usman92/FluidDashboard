@@ -2,6 +2,8 @@ import React from "react";
 import TopBar from "../TopBar/TopBar";
 import "./user.css";
 import { Link } from "react-router-dom";
+import BottomBar from "../BottomBar/BottomBar";
+
 const AllUsers = () => {
   return (
     <div>
@@ -378,6 +380,7 @@ const AllUsers = () => {
           </div>
         </div>
       </div>
+      <BottomBar />
     </div>
   );
 };

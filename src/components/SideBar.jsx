@@ -30,10 +30,10 @@ const routes = [
     name: (
       <DropDown
         Name='Farmers'
-        drop1='Add New Farmer'
-        drop2='All Farmers'
-        link2='/addnew'
-        link1='/addFarmer'
+        drop1='All Farmers'
+        drop2='Add New Farmer'
+        link1='/addnew'
+        link2='/addFarmer'
       />
     ),
     icon: <GiWheat />,
