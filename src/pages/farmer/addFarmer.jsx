@@ -154,15 +154,24 @@ const AddNew = () => {
                 </div>
 
                 <div>
-                  <input type='checkbox' class='form-check-input' id />
+                  <input
+                    type='checkbox'
+                    class='form-check-input'
+                    id
+                    className='mx-2'
+                  />
 
                   <label htmlFor='exampleInputEmail1' className='form-label'>
                     Male
                   </label>
                 </div>
                 <div>
-                  <input type='checkbox' class='form-check-input' id />
-
+                  <input
+                    type='checkbox'
+                    class='form-check-input'
+                    id
+                    className='mx-2'
+                  />
                   <label htmlFor='exampleInputEmail1' className='form-label'>
                     Female
                   </label>
