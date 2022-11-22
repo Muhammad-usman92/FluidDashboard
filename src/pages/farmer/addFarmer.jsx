@@ -206,9 +206,9 @@ const AddNew = () => {
                 />
               </div>
             </div>
-
             <div className='col-lg-4'>
-              <div
+              {/* gender */}
+              {/* <div
                 className='d-flex '
                 style={{ gap: "20px", marginTop: "40px" }}
               >
@@ -246,10 +246,24 @@ const AddNew = () => {
                     Female
                   </label>
                 </div>
+              </div> */}
+              <div className='mt-2'>
+                <label htmlFor='gender'>Gender</label>
+                <select
+                  class='form-control'
+                  onChange={(e) => onInputChange(e)}
+                  required
+                  name='gender'
+                  value={gender}
+                >
+                  <option>Choose...</option>
+                  <option>Male</option>
+                  <option>Female</option>
+                </select>
               </div>
             </div>
             <div className='col-lg-4'>
-              <div
+              {/* <div
                 className='d-flex '
                 style={{ gap: "20px", marginTop: "40px" }}
               >
@@ -285,6 +299,22 @@ const AddNew = () => {
                     Makadedar(Contract)
                   </label>
                 </div>
+              </div> */}
+
+              {/* owner type */}
+              <div className='mt-2'>
+                <label htmlFor='gender'>Owner Type</label>
+                <select
+                  class='form-control'
+                  onChange={(e) => onInputChange(e)}
+                  required
+                  name='ownertype'
+                  value={ownertype}
+                >
+                  <option>Choose...</option>
+                  <option>Owner</option>
+                  <option> Makadedar(Contract)</option>
+                </select>
               </div>
             </div>
           </div>
