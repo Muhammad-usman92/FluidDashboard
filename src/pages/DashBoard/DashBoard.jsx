@@ -12,20 +12,8 @@ import icon8 from "../../img/icon8.svg";
 import icon9 from "../../img/icon9.svg";
 import icon10 from "../../img/icon10.svg";
 import BottomBar from "../../components/BottomBar/BottomBar";
-import axios from "axios";
-import { useEffect } from "react";
+
 const DashBoard = () => {
-  useEffect(() => {
-    const totalUSers = async () => {
-      try {
-        const res = await axios.get("http://localhost:2022/users");
-        console.log(res.data);
-      } catch (err) {
-        console.log(err);
-      }
-    };
-    totalUSers();
-  }, []);
   const [userData] = useState({
     labels: UserData.map((data) => data.year),
     datasets: [

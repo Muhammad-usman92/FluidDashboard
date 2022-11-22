@@ -32,7 +32,7 @@ const routes = [
         Name='Farmers'
         drop1='All Farmers'
         drop2='Add New Farmer'
-        link1='/addnew'
+        link1='/allfarmers'
         link2='/addFarmer'
       />
     ),
