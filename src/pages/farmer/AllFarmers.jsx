@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import BottomBar from "../../components/BottomBar/BottomBar";
 // import { AllUsersData } from "../../utils/Data";
 import axios from "axios";
+import "./Farmers.css";
 const AllFarmers = () => {
   const [AllFarmers, setAllFarmers] = useState([]);
   useEffect(() => {
@@ -21,10 +22,10 @@ const AllFarmers = () => {
   }, []);
   // console.log(AllUsersData);
   return (
-    <div>
-      <TopBar heading='Users' heading2='All Users' />
-      <div className='container'>
-        <h4 className='mt-5'>All District User</h4>
+    <div className='allFarmers'>
+      <TopBar heading='Farmers' heading2='All Farmers' />
+      <div className='container '>
+        <h4 className='mt-5'>All Farmers</h4>
         <p>Filters</p>
         <div className='row'>
           <div className='col-lg-8 ' style={{ display: "flex" }}>
@@ -144,11 +145,11 @@ const AllFarmers = () => {
                   <tr style={{ fontSize: "15px" }}>
                     <td>{index + 1}</td>
                     <td>{item.name}</td>
-                    <td>{item.phone}</td>
-                    <td>{item.email}</td>
-                    <td>{item.address.street}</td>
-                    <td>{item.website}</td>
-                    <td>{item.company.name}</td>
+                    <td>{item.district}</td>
+                    <td>{item.taluka}</td>
+                    <td>{item.village}</td>
+                    <td>{item.tappa}</td>
+                    <td>{item.cnic}</td>
                     <td>
                       <button type='button' class='btn btn-warning view-button'>
                         View

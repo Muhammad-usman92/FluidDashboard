@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import TopBar from "../../components/TopBar/TopBar";
 import BottomBar from "../../components/BottomBar/BottomBar";
-
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
 const AddNew = () => {
+  let history = useNavigate();
   const [farmer, setFarmer] = useState({
     name: "",
     district: "",
@@ -35,11 +37,13 @@ const AddNew = () => {
     // console.log(e.target.value);
     setFarmer({ ...farmer, [e.target.name]: e.target.value });
   };
-  const onSubmit = (e) => {
+  const onSubmit = async (e) => {
     e.preventDefault();
+    await axios.post("http://localhost:2022/users", farmer);
+    history("/");
   };
   return (
-    <div>
+    <div className='addFarmer'>
       <TopBar heading='Farmers' heading2='Add new Farmer' />
       <div className='container'>
         <h3 className='mt-5 mb-5'>Add New Farmer</h3>
