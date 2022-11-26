@@ -129,6 +129,7 @@ const AllFarmers = () => {
               <thead>
                 <tr>
                   <th scope='col'>Sr:No</th>
+                  <th scope='col'>Profile</th>
                   <th scope='col'>Name</th>
                   <th scope='col'>NIC</th>
                   <th scope='col'>District</th>
@@ -144,6 +145,15 @@ const AllFarmers = () => {
                 {AllFarmers.map((item, index) => (
                   <tr style={{ fontSize: "15px" }}>
                     <td>{index + 1}</td>
+                    <td
+                      style={{
+                        widht: "20px",
+                        height: "20px",
+                        borderRadius: "50%",
+                      }}
+                    >
+                      <img src={item.cnincImg} alt='profile' />
+                    </td>
                     <td>{item.name}</td>
                     <td>{item.district}</td>
                     <td>{item.taluka}</td>

@@ -18,6 +18,7 @@ const AddNew = () => {
     mobno: "",
     gender: "",
     ownertype: "",
+    cnicImg: "",
   });
   const {
     name,
@@ -32,15 +33,23 @@ const AddNew = () => {
     mobno,
     gender,
     ownertype,
+    cnicImg,
   } = farmer;
   const onInputChange = (e) => {
     // console.log(e.target.value);
-    setFarmer({ ...farmer, [e.target.name]: e.target.value });
+    setFarmer({
+      ...farmer,
+      [e.target.name]: e.target.value,
+    });
   };
+  // const imgUplaod = (e) => {
+  //   console.log(e.target.files[0]);
+  //   setFarmer(e.target.files[0]);
+  // };
   const onSubmit = async (e) => {
     e.preventDefault();
     await axios.post("http://localhost:2022/users", farmer);
-    history("/");
+    history("/allfarmers");
   };
   return (
     <div className='addFarmer'>
@@ -211,46 +220,6 @@ const AddNew = () => {
               </div>
             </div>
             <div className='col-lg-4'>
-              {/* gender */}
-              {/* <div
-                className='d-flex '
-                style={{ gap: "20px", marginTop: "40px" }}
-              >
-                <div>
-                  <label htmlFor='gender' className='form-label'>
-                    Gender:
-                  </label>
-                </div>
-
-                <div>
-                  <input
-                    class='form-check-input'
-                    type='radio'
-                    onChange={(e) => onInputChange(e)}
-                    value={gender}
-                    name='gender'
-                    className='mx-2'
-                  />
-
-                  <label htmlFor='gender' className='form-label'>
-                    Male
-                  </label>
-                </div>
-                <div>
-                  <input
-                    class='form-check-input'
-                    type='radio'
-                    onChange={(e) => onInputChange(e)}
-                    value={gender}
-                    name='gender'
-                    className='mx-2'
-                  />
-
-                  <label htmlFor='Gender' className='form-label'>
-                    Female
-                  </label>
-                </div>
-              </div> */}
               <div className='mt-2'>
                 <label htmlFor='gender'>Gender</label>
                 <select
@@ -551,9 +520,9 @@ const AddNew = () => {
           </div>
           <hr /> */}
           {/* Document Details */}
-          {/* <div className='row'>
+          <div className='row'>
             <h4>Documents Uploaded: </h4>
-            <div className='col-lg-12 d-flex justify-content-evenly'>
+            {/* <div className='col-lg-12 d-flex justify-content-evenly'>
               <div>
                 <label htmlFor='exampleInputEmail1' className='form-label'>
                   Documents Collected:
@@ -583,7 +552,7 @@ const AddNew = () => {
                   </label>
                 </div>
               </div>
-            </div>
+            </div> */}
             <div className='col-lg-12 d-flex justify-content-center mt-4'>
               <div class='form-group'>
                 <label for='exampleFormControlFile1' className='my-2'>
@@ -593,10 +562,12 @@ const AddNew = () => {
                 <input
                   type='file'
                   class='form-control-file'
-                  id='exampleFormControlFile1'
+                  name='cnicImg'
+                  value={cnicImg}
+                  onChange={(e) => onInputChange(e)}
                 />
               </div>
-              <div class='form-group'>
+              {/* <div class='form-group'>
                 <label for='exampleFormControlFile1' className='my-2'>
                   Upload CNIC Back Side
                 </label>{" "}
@@ -606,8 +577,8 @@ const AddNew = () => {
                   class='form-control-file'
                   id='exampleFormControlFile1'
                 />
-              </div>
-              <div class='form-group'>
+              </div> */}
+              {/* <div class='form-group'>
                 <label for='exampleFormControlFile1' className='my-2'>
                   Land Documents
                 </label>{" "}
@@ -617,10 +588,10 @@ const AddNew = () => {
                   class='form-control-file'
                   id='exampleFormControlFile1'
                 />
-              </div>
+              </div> */}
             </div>
           </div>
-          <hr /> */}
+          <hr />
           <div className='text-center me-auto my-2'>
             <button className='btn btn-primary btn-block'>Submit</button>
           </div>
