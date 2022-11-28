@@ -2,7 +2,7 @@
   "users": [
     {
       "name": "",
-      "district": "asd",
+      "district": "khan",
       "taluka": "",
       "village": "",
       "uc": "",
@@ -15,26 +15,6 @@
       "ownertype": "",
       "cnicImg": "",
       "id": 1
-    },
-    {
-      "district": "zxczxc",
-      "id": 2
-    },
-    {
-      "name": "",
-      "district": "adc",
-      "taluka": "",
-      "village": "",
-      "uc": "",
-      "tappa": "",
-      "deh": "",
-      "fathername": "",
-      "cnic": "",
-      "mobno": "",
-      "gender": "",
-      "ownertype": "",
-      "cnicImg": "C:\\fakepath\\billi.jpg",
-      "id": 3
     }
   ]
 }

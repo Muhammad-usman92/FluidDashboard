@@ -9,17 +9,16 @@ import "./Farmers.css";
 const AllFarmers = () => {
   const [AllFarmers, setAllFarmers] = useState([]);
   useEffect(() => {
-    const totalUSers = async () => {
-      try {
-        const res = await axios.get("http://localhost:2022/users");
-        console.log(res.data);
-        setAllFarmers(res.data);
-      } catch (err) {
-        console.log(err);
-      }
-    };
-    totalUSers();
+    allFamers();
   }, []);
+  const allFamers = async () => {
+    const result = await axios.get("http://localhost:2022/users");
+    setAllFarmers(result.data.reverse());
+  };
+  const deleteFarmer = async (id) => {
+    await axios.delete(`http://localhost:2022/users/${id}`);
+    allFamers();
+  };
   // console.log(AllUsersData);
   return (
     <div className='allFarmers'>
@@ -166,17 +165,18 @@ const AllFarmers = () => {
                       </button>
                     </td>
                     <td>
-                      <button
-                        type='button'
+                      <Link
+                        to={`/updateFarmer/${item.id}`}
                         class='btn btn-warning update-button'
                       >
                         Update
-                      </button>
+                      </Link>
                     </td>
                     <td>
                       <button
                         type='button'
                         class='btn btn-warning delete-button'
+                        onClick={() => deleteFarmer(item.id)}
                       >
                         Delete
                       </button>
