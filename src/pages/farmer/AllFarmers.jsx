@@ -13,7 +13,8 @@ const AllFarmers = () => {
   }, []);
   const allFamers = async () => {
     const result = await axios.get("http://localhost:2022/users");
-    setAllFarmers(result.data.reverse());
+    setAllFarmers(result.data);
+    console.log(result.data);
   };
   const deleteFarmer = async (id) => {
     await axios.delete(`http://localhost:2022/users/${id}`);
@@ -144,14 +145,16 @@ const AllFarmers = () => {
                 {AllFarmers.map((item, index) => (
                   <tr style={{ fontSize: "15px" }}>
                     <td>{index + 1}</td>
-                    <td
-                      style={{
-                        widht: "20px",
-                        height: "20px",
-                        borderRadius: "50%",
-                      }}
-                    >
-                      <img src={item.cnincImg} alt='profile' />
+                    <td>
+                      <img
+                        style={{
+                          widht: "50px",
+                          height: "50px",
+                          borderRadius: "50%",
+                        }}
+                        src={item.cnicImg}
+                        alt='profile'
+                      />
                     </td>
                     <td>{item.name}</td>
                     <td>{item.district}</td>

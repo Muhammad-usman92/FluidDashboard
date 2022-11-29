@@ -42,10 +42,7 @@ const AddNew = () => {
       [e.target.name]: e.target.value,
     });
   };
-  // const imgUplaod = (e) => {
-  //   console.log(e.target.files[0]);
-  //   setFarmer(e.target.files[0]);
-  // };
+
   const onSubmit = async (e) => {
     e.preventDefault();
     await axios.post("http://localhost:2022/users", farmer);

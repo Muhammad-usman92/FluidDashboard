@@ -36,8 +36,8 @@ const UpdateFarmer = () => {
     ownertype,
     cnicImg,
   } = farmer;
+
   const onInputChange = (e) => {
-    // console.log(e.target.value);
     setFarmer({
       ...farmer,
       [e.target.name]: e.target.value,
@@ -50,13 +50,14 @@ const UpdateFarmer = () => {
     history("/allfarmers");
   };
   const loadFarmer = async () => {
-    const res = await axios.get(`http://localhost:2022/users/${id}`);
-    console.log(res);
+    const res = await axios.get(`http://localhost:2022/users/` + id);
     setFarmer(res.data);
   };
   useEffect(() => {
     loadFarmer();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
   return (
     <div className='addFarmer'>
       <TopBar heading='Farmers' heading2='Update Farmer' />
@@ -565,13 +566,13 @@ const UpdateFarmer = () => {
                   Upload CNIC Front Side
                 </label>
                 <br />
-                <input
+                {/* <input
                   type='file'
                   class='form-control-file'
                   name='cnicImg'
                   value={cnicImg}
                   onChange={(e) => onInputChange(e)}
-                />
+                /> */}
               </div>
               {/* <div class='form-group'>
                 <label for='exampleFormControlFile1' className='my-2'>

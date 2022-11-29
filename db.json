@@ -1,20 +1,3 @@
 {
-  "users": [
-    {
-      "name": "",
-      "district": "khan",
-      "taluka": "",
-      "village": "",
-      "uc": "",
-      "tappa": "",
-      "deh": "",
-      "fathername": "",
-      "cnic": "",
-      "mobno": "",
-      "gender": "",
-      "ownertype": "",
-      "cnicImg": "",
-      "id": 1
-    }
-  ]
+  "users": []
 }
